@@ -1,0 +1,43 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+$font-arial: Arial, Helvetica, sans-serif;
+$color-white: white;
+html, body {
+	height: 100%;
+	margin: 0;
+	font-family: $font-arial;
+}
+.hero-image {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.pinimg.com/originals/96/7e/5a/967e5a1e0d7078684ffc3fd1e4e64811.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.hero-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: $color-white;
+	a {
+        text-decoration: none;
+		border: none;
+		outline: 0;
+		display: inline-block;
+		padding: 10px 25px;
+		color: black;
+		background-color: #ddd;
+		text-align: center;
+		cursor: pointer;
+		&:hover {
+			background-color: #555;
+			color: $color-white;
+		}
+	}
+}
+
