@@ -7,6 +7,7 @@ $white-blond: #ccc;
 $red:  #f44336;
 $black-blond: #333333;
 $black-light: #888;
+$gray: #cecece;
 
 h1{
   text-align: center;
@@ -96,3 +97,24 @@ form {
       color: $black-blond;
     }
   }
+
+.page {
+  padding: 2em;
+  background: $gray;
+  .archive {
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+    grid-gap: 1em;
+    .article {
+      color: $black-blond;
+      padding: 1em;
+      background: #fff;
+      box-shadow:
+        0 5px 10px rgba(0, 0, 0, 0.1),
+        0 20px 20px rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+
+
+
